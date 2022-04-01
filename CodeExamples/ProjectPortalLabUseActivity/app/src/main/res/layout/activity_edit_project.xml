@@ -7,6 +7,20 @@
     tools:context=".EditProjectActivity">
 
     <EditText
+        android:id="@+id/projAuthorEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Project Author"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <EditText
         android:id="@+id/projTitleEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,6 +74,35 @@
         app:layout_constraintTop_toTopOf="@+id/submit"
         app:layout_constraintBottom_toBottomOf="@+id/submit" />
 
+    <EditText
+        android:id="@+id/gitLinkEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link"
+        app:layout_constraintStart_toStartOf="@id/projTitleEdit"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/projAuthorEdit" />
+
+    <Switch
+        android:id="@+id/switch1edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gitLinkEdit" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/KeywordsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.chip.ChipGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
